@@ -4,6 +4,22 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #b0b0b0;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -754,3 +770,4 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #5B86B1;
 }
+p.servicesClass {margin-left: 5px; display: none; font-weight:normal;}
