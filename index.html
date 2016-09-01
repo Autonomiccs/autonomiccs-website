@@ -1015,7 +1015,7 @@
 			jQuery('li.timeline-inverted a').click(function(){
 				logClick(getUid(), 'Accessing Gust');
 			});
-			jQuery('h3.section-above-subheading a').filter(function(){return jQuery(this).attr('href').startsWith('mailto');}).click(function(){
+			jQuery('h3.section-above-subheading a').filter(function(){return jQuery(this).attr('href').lastIndexOf('mailto') == 0;}).click(function(){
 				sendInformationAboutClickIdentifierOnHtml(jQuery(this));
 			});
 			logClick(getUid(), 'Accessing website');
