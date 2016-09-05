@@ -1018,6 +1018,10 @@
 			jQuery('h3.section-above-subheading a').filter(function(){return jQuery(this).attr('href').lastIndexOf('mailto') == 0;}).click(function(){
 				sendInformationAboutClickIdentifierOnHtml(jQuery(this));
 			});
+			jQuery('#publications a').click(function(){
+				sendInformationAboutClickIdentifierOnHtml(jQuery(this));
+				return true;
+			});
 			logClick(getUid(), 'Accessing website');
 	</script>
 </body>
