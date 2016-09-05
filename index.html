@@ -968,7 +968,7 @@
             }
 			var createUid = function (){
 				var uid = Math.random().toString(36).substring(2) + '-' +Math.random().toString(36).substring(2) + '-'+ Math.random().toString(36).substring(2) + '-' + Math.random().toString(36).substring(2)
-				Cookies.set('uid', uid);
+				Cookies.set('uid', uid, , { expires: 180 });
 				return uid;
 			};
 			
