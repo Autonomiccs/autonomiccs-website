@@ -64,9 +64,6 @@
                     <li>
                         <a class="page-scroll" href="#project">Project</a>
                     </li>
-					<li>
-                        <a class="page-scroll" href="#publications">Publications</a>
-                    </li>
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
                     </li>
@@ -401,26 +398,6 @@
 
                     <h3 class="section-above-subheading text-muted">The Autonomiccs platform is <a href="https://github.com/Autonomiccs/autonomiccs-platform/blob/master/LICENSE">licenced</a> under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache Licence 2.0</a>.</h3>
                 </div>
-            </div>
-        </div>
-    </section>
-
-	<!-- Publications -->
-    <section id="publications" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Publications</h2>
-                </div>
-                	<h3 class="section-above-subheading text-muted">We value the academic work on research and development. Therefore, we put a great deal of effort on creating solutions and writing academic papers to spread our findings. Here we present the research papers we have published so far.</h3>
-                    <h4>2015</h4>
-                    <ul style="list-style-type:disc">
-                        <li>R. Weingärtner, G. B. Bräscher, C. B. Westphall, "Cloud resource management: A survey on forecasting and profiling models", Journal of Network and Computer Applications 47 (2015) 99 – 106. <a href="http://dx.doi.org/10.1016/j.jnca.2014.09.018" target="_blank">doi:10.1016/j.jnca.2014.09.018</a></li>
-                    </ul>
-                    <h4>2016</h4>
-                    <ul style="list-style-type:disc">
-                        <li>R. Weingärtner, G. B. Bräscher and C. B. Westphall, "A Distributed Autonomic Management Framework for Cloud Computing Orchestration," 2016 IEEE World Congress on Services (SERVICES), San Francisco, CA, USA, 2016, pp. 9-17. doi: <a href="http://dx.doi.org/10.1109/SERVICES.2016.8" target="_blank">10.1109/SERVICES.2016.8</a></li>
-                    </ul>
             </div>
         </div>
     </section>
@@ -964,10 +941,6 @@
 			});
 			jQuery('h3.section-above-subheading a').filter(function(){return jQuery(this).attr('href').lastIndexOf('mailto') == 0;}).click(function(){
 				sendInformationAboutClickIdentifierOnHtml(jQuery(this));
-			});
-			jQuery('#publications a').click(function(){
-				sendInformationAboutClickIdentifierOnHtml(jQuery(this));
-				return true;
 			});
 			logClick(getUid(), 'Accessing website');
 			jQuery('#h3LinkAccessCMaaSFree, #iconH3LinkAccessCMaaSFree').click(function(){
